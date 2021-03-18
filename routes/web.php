@@ -28,4 +28,7 @@ Route::group(['middleware'=>['auth']],function (){
 
     Route::get('/manageExpense','ExpenseController@manageExpense')->name('manageExpense');
     Route::delete('/manageExpense/{id}','ExpenseController@destroy')->name('destroy');
+
+    Route::get('/profile','HomeController@profile')->name('profile');
+    Route::put('/profile','HomeController@changeImage')->name('imageUpdate');
 });

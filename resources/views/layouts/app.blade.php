@@ -31,9 +31,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
 
-        .container {
-            max-width: 960px;
-        }
+        /*.container {*/
+        /*    max-width: 960px;*/
+        /*}*/
         .navbar-survival101 {
             background-color:black;
         }
@@ -54,14 +54,16 @@
             }
 
         }
-        @yield('css')
     </style>
 </head>
 <body class="" style="background: url('images/background.jpg') no-repeat; background-size: cover">
 <nav class="navbar navbar-expand-lg navbar-dark navbar-survival101">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="https://lh3.googleusercontent.com/-ZAS0BBE8Sm0/WaFOdATxW9I/AAAAAAAAAf4/8FfuKoWw6n0cvynAv7Fv2sdYESliQEm4wCL0BGAYYCw/h18/2017-08-26.png" alt="L A N T E R N">
+
+        <h4 class="text-white font-weight-bold">Daily Expense Tracker</h4> &nbsp;&nbsp;
+        <a class="navbar-brand font-weight-bold" style="font-family: cursive">
+{{--           Daily Expense Tracker--}}
+            <img src="https://image.flaticon.com/icons/png/128/3200/3200925.png" style="height: 35px; width: 50px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,19 +71,28 @@
 
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('expense')}}">DASHBOARD<span class="sr-only">(current)</span></a>
                 </li>
+                <hr>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('addExpense')}}">Add Expense</a>
                 </li>
+                <hr>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('manageExpense')}}">Manage Expense</a>
                 </li>
+                <hr>
             </ul>
-            <ul class="justify-content-center" id="unol" style="margin:0;">
-                <img src="https://as1.ftcdn.net/jpg/01/05/29/62/500_F_105296263_MX030meFkK57Jj7z4TaSZXw1T0KPQXmd.jpg" style="height: 25px;width: 25px">
+            @if(auth()->user())
+            <ul id="unol" style="margin:0;list-style-type: none;padding-left: 0px">
+                <li class="nav-item text-white float-left">
+                    <a href="{{route('profile')}}" class="text-white" style="text-decoration: none">
+                    {{auth()->user()->name}} &nbsp;<img src="https://as1.ftcdn.net/jpg/01/05/29/62/500_F_105296263_MX030meFkK57Jj7z4TaSZXw1T0KPQXmd.jpg" class="rounded-circle" style="height: 40px;width: 40px;">
+                    </a>
+                </li>
             </ul>
+            @endif
 
         </div>
     </div>
@@ -101,5 +112,35 @@
     setInterval(function (){
         $("#success").fadeOut();
     },1000);
+
+    setInterval(function (){
+        $("#message").fadeOut();
+    },2000);
+
+
+
+
+    $("#hoverable").hover(function(){
+        $(this).removeClass("btn-primary");
+        $(this).addClass("btn-danger");
+
+    }, function(){
+        $(this).removeClass("btn-danger");
+        $(this).addClass("btn-primary");
+    });
+
+    $('input[type="file"]').change(function(e) {
+        var geekss = e.target.files[0].name;
+            $("h6").text(geekss);
+    });
+
+    $("#saveProfile").click(function (e){
+        $name = $('input[type="file"]').val();
+        if(!$name){
+            alert("Please Select a File");
+        }else{
+            $("#myform").submit();
+        }
+    })
 </script>
 

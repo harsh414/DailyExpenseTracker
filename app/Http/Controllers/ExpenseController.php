@@ -44,7 +44,7 @@ class ExpenseController extends Controller
         $expense->item_name= $name;
         $expense->cost= $cost;
         if($expense->save()){
-            return back()->with('success','New Expense saved');
+            return redirect()->route('manageExpense')->with('success','New Expense saved');
         }else{
             return back()->with('success','Something Went Wrong');
         }
