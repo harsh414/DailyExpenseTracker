@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function changeImage(Request $request)
     {
         $request->validate([
-            'file' => 'max:6000 | min:100',
+            'file' => 'max:6000 | min:20',
         ]);
         if($request->hasFile('file')) {
             $user= Auth::user();

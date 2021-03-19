@@ -31,26 +31,30 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-6 col-sm-12">
-            <img src="{{asset('images/welcomeimage.jpg')}}" style=" width:100%;height: 100vh" alt="">
+        <div class="col-lg-5 col-sm-12">
+            <img src="{{asset('images/expbg.jpeg')}}" style=" width:100%;height: 100vh" alt="">
         </div>
-        <div class="col-sm-12 col-lg-6">
-
-            <div class="font-weight-bold " style="font-size: 40px;letter-spacing: 2px; font-family: 'cursive';margin-top: 5rem">
-                Daily Expense Tracker
+        <div class="col-sm-12 col-lg-7 text-center" style="background: black;opacity: 0.8">
+            <div class="font-weight-bold" style="font-size: 40px;letter-spacing: 2px; font-family: 'cursive';margin-top: 5rem;color: blue">
+                <span style="color: white">D</span>ai<span style="color: yellow">ly</span>
+                <span style="color: white">E</span>xpen<span style="color: white">se</span>
+                <span style="color: yellow">T</span>rac<span style="color: white">ke</span>r
             </div>
-            <div style="margin-top: 3.5rem" class="font-extrabold text-3xl tracking-wide ml-4">
-                Join Today.
+            <img src="https://image.flaticon.com/icons/png/128/2942/2942269.png" class="mt-3" style="height: 80px;width: 80px;">
+            <div style="color:yellow;margin-top: 3.5rem;font-size: 20px;font-family: 'cursive'" class="text-3xl tracking-wide ml-4">
+{{--                <p class="font-weight-bold" style="font-family: 'cursive';font-size: 23px">--}}
+                Join Today
+{{--                </p>--}}
             </div>
 
-            <div class="ml-4 mt-14 align-items-center">
+            <div class="ml-4 mt-2 align-items-center">
                 <div class="links">
                     @auth
-                        <a href="{{ url('/tweets') }}"><button class="bg-blue-400 w-25 shadow rounded-lg px-4 py-2 my-1 text-white lg:mr-1" >Home</button></a>
+                        <a href="{{ url('/profile') }}"><button class="btn btn-primary w-25 shadow rounded-lg px-4 py-2 my-1 text-white" >Home</button></a>
                     @else
-                        <a href="{{ route('register') }}"><button class="bg-white-400 w-25 shadow font-bold rounded-lg px-4 py-2 my-1 text-blue-600 lg:mr-1" >Sign Up</button></a>
-                        <br><br><br>
-                        <a href="{{ route('login') }}"><button class="bg-blue-400 w-25 shadow rounded-lg px-4 py-2 my-1 text-white lg:mr-1">Login</button></a>
+                        <a href="{{ route('register') }}"><button class="btn btn-dark w-25 shadow font-bold rounded-lg px-4 py-2" >Sign Up</button></a>
+                        <br><br>
+                        <a href="{{ route('login') }}"><button class="btn btn-primary w-25 shadow rounded-lg px-4 py-2 text-white lg:mr-1">Login</button></a>
 
                     @endauth
                 </div>

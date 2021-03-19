@@ -11,7 +11,9 @@
             Add New <img src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Plus_01-66-128.png" style="height:24px;width:24px;color: white">
         </a>
     </button>
-    <h1 class="text-center mt-5 font-weight-bold" style="font-family: 'cursive'">Manage Expenses</h1>
+    <h1 class="text-center mt-5 font-weight-bold" style="font-family: 'cursive'">
+        Man<span style="color: deeppink">age </span><span style="color: deeppink">Exp</span>ense
+    </h1>
     <table class="table table-dark mt-4">
         <thead>
         <tr>

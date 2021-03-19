@@ -56,7 +56,7 @@
         }
     </style>
 </head>
-<body class="" style="background: url('images/background.jpg') no-repeat; background-size: cover">
+<body class="" style="background: url('images/bg2.jpg') no-repeat; background-size: cover">
 <nav class="navbar navbar-expand-lg navbar-dark navbar-survival101">
     <div class="container">
 
@@ -71,15 +71,15 @@
 
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item" id="navb">
                     <a class="nav-link" href="{{route('expense')}}">DASHBOARD<span class="sr-only">(current)</span></a>
                 </li>
                 <hr>
-                <li class="nav-item">
+                <li class="nav-item" id="navb">
                     <a class="nav-link" href="{{route('addExpense')}}">Add Expense</a>
                 </li>
                 <hr>
-                <li class="nav-item">
+                <li class="nav-item" id="navb">
                     <a class="nav-link" href="{{route('manageExpense')}}">Manage Expense</a>
                 </li>
                 <hr>
@@ -88,7 +88,7 @@
             <ul id="unol" style="margin:0;list-style-type: none;padding-left: 0px">
                 <li class="nav-item text-white float-left">
                     <a href="{{route('profile')}}" class="text-white" style="text-decoration: none">
-                    {{auth()->user()->name}} &nbsp;<img src="https://as1.ftcdn.net/jpg/01/05/29/62/500_F_105296263_MX030meFkK57Jj7z4TaSZXw1T0KPQXmd.jpg" class="rounded-circle" style="height: 40px;width: 40px;">
+                    {{auth()->user()->name}} &nbsp;<img src="{{auth()->user()->profileurl}}" class="rounded-circle" style="height: 40px;width: 40px;">
                     </a>
                 </li>
             </ul>
@@ -105,6 +105,7 @@
 </body>
 </html>
 <script>
+
     $(function($){ // wait until the DOM is ready
         $("#datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
     });
@@ -116,6 +117,7 @@
     setInterval(function (){
         $("#message").fadeOut();
     },2000);
+
 
 
 
