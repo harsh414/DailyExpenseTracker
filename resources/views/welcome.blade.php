@@ -25,7 +25,7 @@
     <style>
         @media only screen and (max-width: 760px) {
             #back {
-                height: 30vh;
+                height: 20vh;
             }
         }
     </style>
@@ -57,11 +57,11 @@
             <div class="ml-4 mt-2 align-items-center">
                 <div class="links">
                     @auth
-                        <a href="{{ url('/profile') }}"><button class="btn btn-primary w-25 shadow rounded-lg px-4 py-2 my-1 text-white" >Home</button></a>
+                        <a href="{{ url('/profile') }}"><button class="btn btn-primary w-50 shadow rounded-lg px-4 py-2 my-1 text-white" >Home</button></a>
                     @else
-                        <a href="{{ route('register') }}"><button class="btn btn-dark w-25 shadow font-bold rounded-lg px-4 py-2" >Sign Up</button></a>
+                        <a href="{{ route('register') }}"><button class="btn btn-dark w-50 shadow font-bold rounded-lg px-4 py-2" >Sign Up</button></a>
                         <br><br>
-                        <a href="{{ route('login') }}"><button class="btn btn-primary w-25 shadow rounded-lg px-4 py-2 text-white lg:mr-1">Login</button></a>
+                        <a href="{{ route('login') }}"><button class="btn btn-primary w-50 shadow rounded-lg px-4 py-2 text-white lg:mr-1">Login</button></a>
 
                     @endauth
                 </div>
