@@ -22,6 +22,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        @media only screen and (max-width: 760px) {
+            #back {
+                height: 30vh;
+            }
+        }
+    </style>
 @yield('linkrel')
 
 <!-- Styles -->
@@ -31,10 +38,10 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-5 col-sm-12">
+        <div class="col-lg-5 col-sm-12 col-md-4" id="back">
             <img src="{{asset('images/expbg.jpeg')}}" style=" width:100%;height: 100vh" alt="">
         </div>
-        <div class="col-sm-12 col-lg-7 text-center" style="background: black;opacity: 0.8">
+        <div class="col-sm-12 col-lg-7 col-md-8 text-center" style="background: black;opacity: 0.8">
             <div class="font-weight-bold" style="font-size: 40px;letter-spacing: 2px; font-family: 'cursive';margin-top: 5rem;color: blue">
                 <span style="color: white">D</span>ai<span style="color: yellow">ly</span>
                 <span style="color: white">E</span>xpen<span style="color: white">se</span>
