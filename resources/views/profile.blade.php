@@ -33,6 +33,12 @@
                      <label for="name" class="font-weight-bold">Email</label>
                      <input disabled class="form-control" id="email" name="email" value="{{auth()->user()->email}}">
                  </div>
+             <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                 @csrf
+                 <button type="submit" class="btn btn-danger">
+                         Logout <img src="https://img.icons8.com/android/2x/logout-rounded-left.png" style="height: 24px;width: 24px;" alt="">
+                 </button>
+             </form>
          </div>
     </div>
 </div>

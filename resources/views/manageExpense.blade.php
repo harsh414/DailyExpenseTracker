@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container" style="height: 100vh;margin-top: 10%">
+<div class="container" style="height: 100vh;margin-top: 15%">
     <div class="text-center btn-primary text-lg-center" id="success" style="color: black">
         @if(session()->has('success'))
             {{session('success')}}

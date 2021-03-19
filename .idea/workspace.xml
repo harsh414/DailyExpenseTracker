@@ -3,17 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="79b7e648-3355-4bab-b633-5328b1967de7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dailyexptracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dailyexptracker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExpenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExpenseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/addexpense.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addexpense.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/manageExpense.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/manageExpense.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +162,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615976745830</updated>
       <workItem from="1615976746908" duration="31639000" />
-      <workItem from="1616068735199" duration="18143000" />
+      <workItem from="1616068735199" duration="20516000" />
+      <workItem from="1616144115020" duration="38000" />
     </task>
     <servers />
   </component>
@@ -189,17 +183,17 @@
       <screen x="0" y="0" width="1449" height="864" />
     </state>
     <state x="504" y="335" key="#com.jetbrains.php.refactoring.pullPush.pushDown.PhpPushDownDialog#/0.0.1449.864@0.0.1449.864" timestamp="1615999655605" />
-    <state x="505" y="187" key="FileChooserDialogImpl" timestamp="1616090326682">
+    <state x="505" y="187" key="FileChooserDialogImpl" timestamp="1616102812212">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
-    <state x="505" y="187" key="FileChooserDialogImpl/0.0.1449.864@0.0.1449.864" timestamp="1616090326682" />
+    <state x="505" y="187" key="FileChooserDialogImpl/0.0.1449.864@0.0.1449.864" timestamp="1616102812212" />
     <state x="481" y="155" key="NewPhpClassDialog" timestamp="1615993595186">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
     <state x="481" y="155" key="NewPhpClassDialog/0.0.1449.864@0.0.1449.864" timestamp="1615993595186" />
-    <state x="387" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1616100097637">
+    <state x="387" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1616103241047">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
-    <state x="387" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1449.864@0.0.1449.864" timestamp="1616100097637" />
+    <state x="387" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1449.864@0.0.1449.864" timestamp="1616103241047" />
   </component>
 </project>

@@ -1,11 +1,16 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container" style="height: 100vh;margin-top: 10%">
+    <div class="container" style="height: 100vh;margin-top:15%">
         <div class="text-center btn-primary text-lg-center" id="success" style="color: black">
             @if(session()->has('success'))
                 {{session('success')}}
             @endif
         </div>
+        <button class="btn btn-primary float-left">
+            <a href="{{route('manageExpense')}}" class="text-white" style="text-decoration: none;font-family: cursive">
+                Manage Expenses <img src="https://img.icons8.com/android/2x/edit.png" style="height:24px;width:24px;color: white">
+            </a>
+        </button>
         <h1 class="text-center mt-5 font-weight-bold" style="font-family: 'cursive'">Add New Expense</h1>
         <form action="addExpense" method="post">
             {{@csrf_field()}}
